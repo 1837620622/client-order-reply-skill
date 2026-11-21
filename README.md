@@ -91,9 +91,23 @@ mkdir -p ~/.claude/skills
 cp -r client-order-reply-skill/skills/client-order-reply ~/.claude/skills/
 ```
 
-**Cursor / Antigravity / 其他客户端**
+**Cursor（`~/.cursor/skills`，也会读 `~/.agents/skills` 和 `~/.claude/skills`）**
 
-将 `skills/client-order-reply` 目录复制到对应客户端的 skills 目录（例如 `~/.cursor/skills/` 或项目内的 `.agents/skills/`）。Windows 用户把 `~` 替换为 `%USERPROFILE%`。装完重启客户端即可生效。
+```bash
+mkdir -p ~/.cursor/skills
+cp -r client-order-reply-skill/skills/client-order-reply ~/.cursor/skills/
+```
+
+**Antigravity（全局 `~/.gemini/config/skills`，项目内 `.agents/skills`）**
+
+```bash
+mkdir -p ~/.gemini/config/skills
+cp -r client-order-reply-skill/skills/client-order-reply ~/.gemini/config/skills/
+```
+
+**其他客户端**
+
+OpenCode，Gemini CLI 等支持 Agent Skills 的客户端一般会读项目内的 `.agents/skills/`，把 `skills/client-order-reply` 复制进去即可。Windows 用户把 `~` 换成 `%USERPROFILE%`。装完重启客户端生效。
 
 ## 怎么用
 
