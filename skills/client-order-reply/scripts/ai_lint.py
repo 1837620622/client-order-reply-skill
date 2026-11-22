@@ -3,7 +3,11 @@
 只是提示，不是判决。报出来的地方要自己读一遍再决定改不改。"""
 import re, sys, statistics
 
-text = " ".join(sys.argv[1:]) if len(sys.argv) > 1 else sys.stdin.read()
+args = sys.argv[1:]
+prev = []
+while "--prev" in args:
+    k = args.index("--prev"); prev.append(args[k + 1]); del args[k:k + 2]
+text = " ".join(args) if args else sys.stdin.read()
 text = text.strip()
 hits = []
 
@@ -38,6 +42,18 @@ for level, ws in words.items():
 # 开头
 if re.match(r"^(好的|明白|当然|收到|没关系，?.{0,6}确实|你好|您好)", text):
     flag("必改", "开头是客服式接话，换成 没事，理解的 / 行 / 可以的 / 这个好办 / 直接进判断")
+
+# 开头和上一条重复
+openers = ["好的呢", "好嘞", "好的", "行呀", "可以的", "没问题呀", "没问题", "这个好办", "哈哈", "收到", "没事", "行", "可以"]
+def opener(t):
+    t = t.strip()
+    for o in openers:
+        if t.startswith(o):
+            return o
+    return t[:3]
+for p in prev:
+    if p.strip() and opener(p) == opener(text):
+        flag("必改", f"开头 {opener(text)} 和上一条一样，换个开头或者直接从客户的话接")
 
 # 口头禅过密
 for w, n in [("这块", 2), ("直接", 2), ("我这边", 1), ("你那边", 1), ("咱们", 1), ("一下", 2), ("我会", 1), ("我可以", 1)]:
