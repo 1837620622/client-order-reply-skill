@@ -63,8 +63,9 @@ metadata:
 | 数据分析、机器学习/深度学习/大模型、生信与医学统计、药经、数学建模、软件全栈/小程序/爬虫/逆向/自动化 | [references/domain-data-ai-dev.md](references/domain-data-ai-dev.md) |
 | 社科/心理/教育问卷统计、经管商业分析、行业研究、通用科研论文配套、多学科混合单 | [references/domain-academic-business.md](references/domain-academic-business.md) |
 | 报价核算、谈价铺垫、砍价拆招、加急加价、防白嫖与范围边界 | [references/pricing-and-negotiation.md](references/pricing-and-negotiation.md) |
-| 谈判与定价心理学：锚定，区间报价，分档折中，贴标签，互惠与小承诺，让步节奏，人性弱点地图（骗术对照正当用法），看得见的功夫，老板视角谈单，技巧真实效果，诚信红线 | [references/negotiation-psychology.md](references/negotiation-psychology.md) |
-| 深度去 AI 味、口语节奏控制、避坑黑名单、AI腔改写对照、人称用法（我 我们 咱们 你）、学术专业亲切的平衡 | [references/anti-ai-style.md](references/anti-ai-style.md) |
+| 谈单心理学：人性弱点对照表（骗术对照正当用法），报价规矩，让客户觉得值，聊天技巧，分档让步，老板视角谈单，七个常见场景示范，诚信红线 | [references/negotiation-psychology.md](references/negotiation-psychology.md) |
+| 深度去 AI 味、口语节奏控制、避坑黑名单、AI腔改写对照、人称用法（我 我们 咱们 你）、学术专业亲切的平衡 |
+| 以上做法的参考文献和证据强弱（只供核对更新，写回复时不用读） | [references/sources.md](references/sources.md) | [references/anti-ai-style.md](references/anti-ai-style.md) |
 | 各领域标杆回复语气参考（看味道，别照抄句式） | [references/examples.md](references/examples.md) |
 
 ### 第四步：报价与谈价判定
