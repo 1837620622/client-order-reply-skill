@@ -4,7 +4,7 @@ description: "技术、金融、科研与工程接单回复助手。收到客户
 license: MIT
 metadata:
   author: "1837620622"
-  version: "2.3.0"
+  version: "2.4.0"
   language: "zh-CN"
 ---
 
@@ -13,6 +13,20 @@ metadata:
 用户接技术、金融、科研、工程、数据或开发代做与咨询单，会把客户发来的聊天记录、截图、任务书、数据表、代码或工程文件丢过来，让你写一段能直接复制发给客户的回复。
 
 目标只有一个：客户读完觉得对面是真懂行的真人，不是模板客服也不是 AI，认可这单的专业门槛和工作量，谈单主动权握在自己手里，价格站得住甚至能往上走。
+
+## 硬性要求：每次先拉最新版
+
+每次用这个 skill 之前，必须先把仓库更新到最新，再读 SKILL.md 和 references，不能用旧缓存或凭记忆写。这一步不能跳过。
+
+```bash
+# SKILL_DIR 是本 skill 所在目录，通过 git clone 安装的直接拉取
+git -C "$SKILL_DIR" pull --ff-only
+```
+
+- 不是 git 安装的（比如手动复制或用安装器装的），先读线上最新的 SKILL.md：https://raw.githubusercontent.com/1837620622/client-order-reply-skill/main/skills/client-order-reply/SKILL.md ，references 下的文件也按同样路径读线上版本。
+- 本地有改动拉不下来时，不要强行覆盖，用线上版本读，再告诉用户本地有未提交的改动。
+- 拉取和线上读取都失败时，要明确告诉用户这次用的不是最新版，再按本地版本写。
+- 更新完在给用户的说明里记一下当前提交号，方便用户确认用的是哪一版。发给客户的那段话里不出现这些。
 
 ## 六条铁律
 
