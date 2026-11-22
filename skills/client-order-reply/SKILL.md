@@ -4,7 +4,7 @@ description: "技术、金融、科研与工程接单回复助手。收到客户
 license: MIT
 metadata:
   author: "1837620622"
-  version: "2.1.0"
+  version: "2.2.0"
   language: "zh-CN"
 ---
 
@@ -63,16 +63,18 @@ metadata:
 | 数据分析、机器学习/深度学习/大模型、生信与医学统计、药经、数学建模、软件全栈/小程序/爬虫/逆向/自动化 | [references/domain-data-ai-dev.md](references/domain-data-ai-dev.md) |
 | 社科/心理/教育问卷统计、经管商业分析、行业研究、通用科研论文配套、多学科混合单 | [references/domain-academic-business.md](references/domain-academic-business.md) |
 | 报价核算、谈价铺垫、砍价拆招、加急加价、防白嫖与范围边界 | [references/pricing-and-negotiation.md](references/pricing-and-negotiation.md) |
+| 谈判与定价心理学：锚定，区间报价，分档折中，贴标签，互惠与小承诺，让步节奏，诚信红线 | [references/negotiation-psychology.md](references/negotiation-psychology.md) |
 | 深度去 AI 味、口语节奏控制、避坑黑名单、AI腔改写对照 | [references/anti-ai-style.md](references/anti-ai-style.md) |
 | 各领域标杆回复语气参考（看味道，别照抄句式） | [references/examples.md](references/examples.md) |
 
 ### 第四步：报价与谈价判定
 
-完整核价模型与拆招话术见 [references/pricing-and-negotiation.md](references/pricing-and-negotiation.md)。执行时死守三条线：
+完整核价模型与拆招话术见 [references/pricing-and-negotiation.md](references/pricing-and-negotiation.md)。执行时死守四条线：
 
 1. **未授权不报价**：用户没明确说报价，正文零价格数字。需要探预算时，先把技术点和交付讲透，再自然问一句对方大概心理价位或打算按哪档做；信息都还没给全时，先要资料，连预算都不用急着问。
 2. **授权报价必须先核工作量**：用户要求“帮我报价”但没给具体数字时，按五维核价（有效工时 + 技术稀缺度 + 数据/算力/软件硬成本 + 加急系数 + 返工与讲解风险）先算清合理区间，绝不按低价模板糊弄。核心信息不全时只报“常规起步区间，看文件定准价”，不轻易报死价把自己锁死。
-3. **不犯谈单大忌**：不说自己做得特别快（按完整含修改周期估时间）；不主动提退款；不主动给对方往后拖的台阶；不乱承诺“包过、保证显著、保证老师满意、完全没问题、一定加分”，只承诺可验收的交付标准。
+3. **用心理学把价说稳**：授权报价时主动先出价，价格前先讲难点和交付，报区间且下限就是目标价，分三档把最想成交的放中间，砍价只降档不降单价，每次让步都换东西。担心和抵触先用 听起来，看得出来 说出来再接。所有手法只放大真实价值，不编稀缺，不编案例和行情，不拿焦虑施压。详见 [references/negotiation-psychology.md](references/negotiation-psychology.md)。
+4. **不犯谈单大忌**：不说自己做得特别快（按完整含修改周期估时间）；不主动提退款；不主动给对方往后拖的台阶；不乱承诺“包过、保证显著、保证老师满意、完全没问题、一定加分”，只承诺可验收的交付标准。
 
 ### 第五步：去 AI 味成文与发前自检
 
