@@ -4,7 +4,7 @@ description: "技术、金融、科研与工程接单回复助手。收到客户
 license: MIT
 metadata:
   author: "1837620622"
-  version: "2.8.0"
+  version: "2.9.0"
   language: "zh-CN"
 ---
 
@@ -104,6 +104,7 @@ git -C "$SKILL_DIR" pull --ff-only
 | 报价核算、谈价铺垫、砍价拆招、加急加价、防白嫖与范围边界 | [references/pricing-and-negotiation.md](references/pricing-and-negotiation.md) |
 | 谈单心理学：人性弱点对照表（骗术对照正当用法），报价规矩，让客户觉得值，聊天技巧，分档让步，老板视角谈单，七个常见场景示范，诚信红线 | [references/negotiation-psychology.md](references/negotiation-psychology.md) |
 | 深度去 AI 味、口语节奏控制、避坑黑名单、AI腔改写对照、人称用法（我 我们 咱们 你）、学术专业亲切的平衡 | [references/anti-ai-style.md](references/anti-ai-style.md) |
+| 实单复盘：真实成交价锚点，丢单原因，客户常见问法怎么接，用户自己踩过的坑，用户真实有的数据库和软件 | [references/real-orders-review.md](references/real-orders-review.md) |
 | 以上做法的参考文献和证据强弱（只供核对更新，写回复时不用读） | [references/sources.md](references/sources.md) |
 | 各领域标杆回复语气参考（看味道，别照抄句式） | [references/examples.md](references/examples.md) |
 
@@ -115,6 +116,8 @@ git -C "$SKILL_DIR" pull --ff-only
 2. **授权报价必须先核工作量**：用户要求“帮我报价”但没给具体数字时，按五维核价（有效工时 + 技术稀缺度 + 数据/算力/软件硬成本 + 加急系数 + 返工与讲解风险）先算清合理区间，绝不按低价模板糊弄。核心信息不全时只报“常规起步区间，看文件定准价”，不轻易报死价把自己锁死。
 3. **用心理学把价说稳**：授权报价时主动先出价，价格前先讲难点和交付，报区间且下限就是目标价，分三档把最想成交的放中间，砍价只降档不降单价，每次让步都换东西。担心和抵触先用 听起来，看得出来 说出来再接。所有手法只放大真实价值，不编稀缺，不编案例和行情，不拿焦虑施压。判断标准是客户事后知道全部真相还会不会觉得值。详见 [references/negotiation-psychology.md](references/negotiation-psychology.md)。
 4. **不犯谈单大忌**：不说自己做得特别快（按完整含修改周期估时间）；不主动提退款；不主动给对方往后拖的台阶；不乱承诺“包过、保证显著、保证老师满意、完全没问题、一定加分”，只承诺可验收的交付标准。
+
+5. **学生单先看锚点**：闲鱼学生单成交多在150到1500，多模型大单别一上来报整套总价，给分档且最低档贴着学生常见预算，报到客户预算3倍以上基本直接丢单，见 [references/real-orders-review.md](references/real-orders-review.md)。
 
 ### 第五步：去 AI 味成文与发前自检
 
