@@ -4,7 +4,7 @@ description: "为闲鱼个人接单卖家写发给客户的回复和报价，单
 license: MIT
 metadata:
   author: "1837620622"
-  version: "3.7.0"
+  version: "3.7.1"
   language: "zh-CN"
 ---
 
