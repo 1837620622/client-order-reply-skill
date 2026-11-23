@@ -4,7 +4,7 @@ description: "技术、金融、科研与工程接单回复助手。收到客户
 license: MIT
 metadata:
   author: "1837620622"
-  version: "2.16.0"
+  version: "2.16.1"
   language: "zh-CN"
 ---
 
