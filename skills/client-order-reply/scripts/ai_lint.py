@@ -40,7 +40,7 @@ for level, ws in words.items():
         flag(level, "用词 " + " ".join(got))
 
 # 开头
-if re.match(r"^(好的(?!呢)|明白|当然|收到|没关系，?.{0,6}确实|你好|您好)", text):
+if re.match(r"^(明白|当然|没关系，?.{0,6}确实|你好|您好)", text) or (re.match(r"^(好的(?!呢)|收到)", text) and len(text) > 25):
     flag("必改", "开头是客服式接话，换成 没事，理解的 / 行 / 可以的 / 这个好办 / 直接进判断")
 
 # 开头和上一条重复
@@ -100,6 +100,10 @@ if text.count("？") + text.count("?") > 1:
     flag("留意", "问号超过一个，一次只问一件")
 
 n = len(re.sub(r"\s", "", text))
+if prev:
+    pl = [len(re.sub(r"\s", "", p)) for p in prev if p.strip()]
+    if pl and all(abs(x - n) <= max(12, n * 0.25) for x in pl):
+        flag("留意", f"长度 {n} 和前几条 {pl} 差不多，该短就短该长就长，交叉着来")
 print(f"字数 {n}，句子 {len(sents)}，分句 {len(clauses)}")
 if not hits:
     print("没查出明显 AI 味。机器查不出语气，最后还要自己念一遍，像不像本人在微信上打的。")
