@@ -29,6 +29,11 @@
 - Kwon, S., & Weingart, L. R. (2004). Unilateral concessions from the other party. *Journal of Applied Psychology*, 89(2), 263–278。对方马上让步时，人对东西的估值和成交满意度最低，逐步或延后让步更好。支撑 PN 十.4。
 - Tey, K. S., Schaerer, M., Madan, N., & Swaab, R. I. (2021). The impact of concession patterns on negotiations. *Organizational Behavior and Human Decision Processes*。七个研究 N=2311，让步一次比一次小，对方还价更保守，成交更差。支撑 PN 十.8。
 
+## 砍价话术调研（经验帖，非研究，2026-11-23 读的搜索摘要）
+- 闲鱼卖家经验：sellygenie.com 砍价应对指南，uvtao.com 好卖家论坛 闲鱼遇到砍价咋回，抖音 远方哥电商 闲鱼砍价话术，chat.bumo.cc 闲鱼卖二手复盘（反问 你看多少合适），GitHub fancyboi999/goofish-cli bargain-ladder.md（小刀大刀屠龙刀三档）。支撑 PN 十一。弱。
+- 接私活经验：huadongpeng.com 接私活被压价把单价划掉（送零成本添头），luoluo.help 定价报价与分阶段付款（减范围，减修改次数），ximishare.cn 第一次接私活（别替客户砍价），pptnote.com 接案报价与殺價回覆，foreverwebs.com 报价被砍价怎么办（试探，比价，预算，惯性四类）。支撑 PN 十一。弱。
+- 销售异议处理：ttxiaoguan.com 客户说太贵了怎么回复，umu.cn 客户说太贵了怎么回复，freem.ai PricePush（试探，没预算，比价，借口，砍范围五类）。支撑 PN 十一 分类表。弱。
+
 ## 骗局心理与影响力
 - Stajano, F., & Wilson, P. (2011). Understanding scam victims: seven principles for systems security. *Communications of the ACM*, 54(3), 70–75。素材为 BBC The Real Hustle。支撑 NP 一。中
 - Lea, S. E. G., Fischer, P., & Evans, K. M. (2009). *The psychology of scams: Provoking and committing errors of judgement*. 英国公平交易局委托报告。支撑 NP 一。中

@@ -1,10 +1,10 @@
 ---
 name: client-order-reply
-description: "技术、金融、科研与工程接单回复助手。收到客户消息、截图、任务书、数据或工程文件后，先多遍精读需求并联网检索核实专业知识与行业情况，再结合对应领域实操和谈单策略，写出像真人打字、无AI味、可直接复制发给客户的回复。默认严禁主动报价，仅在用户明确要求报价时按真实工作量合理核价。覆盖金融实证、量化交易、估值财务、电气电力、控制仿真、机械CAE、AI算法、数据分析、生信医药、软件开发、铸造成形与材料、嵌入式PLC与机器人、GIS遥感环境能源、申报书报告与文书写作，以及科研配套。客户原话直接复制过来时，顺着原话自然接话。提到客户、回复、接单、谈单、报价、谈价、压价、砍价、询价、预算、代做、闲鱼、客户说、客户问、怎么回、帮我回、回复客户时触发。Use when the user forwards a freelance or consulting client's message, screenshot, or files and wants a natural human-like Chinese reply, domain-verified technical response, negotiation angle, or workload-aligned quote."
+description: "技术、金融、科研与工程接单回复助手。收到客户消息、截图、任务书、数据或工程文件后，先多遍精读需求并联网检索核实专业知识与行业情况，再结合对应领域实操和谈单策略，写出像真人打字、无AI味、可直接复制发给客户的回复。默认严禁主动报价，仅在用户明确要求报价时按真实工作量合理核价。覆盖金融实证、量化交易、估值财务、电气电力、控制仿真、机械CAE、AI算法、数据分析、生信医药、软件开发、铸造成形与材料、嵌入式PLC与机器人、GIS遥感环境能源、申报书报告与文书写作，以及科研配套。客户原话直接复制过来时，顺着原话自然接话。提到客户、回复、接单、谈单、报价、谈价、压价、砍价、议价、嫌贵、便宜点、最低多少、抹零、心里价位、询价、预算、代做、闲鱼、客户说、客户问、怎么回、帮我回、接话、回复客户时必须触发，这是硬性规则。Use when the user forwards a freelance or consulting client's message, screenshot, or files and wants a natural human-like Chinese reply, domain-verified technical response, negotiation angle, or workload-aligned quote."
 license: MIT
 metadata:
   author: "1837620622"
-  version: "2.13.0"
+  version: "2.14.0"
   language: "zh-CN"
 ---
 
@@ -16,11 +16,13 @@ metadata:
 
 ## 硬性要求
 
-这三条每次都要做到，不能跳过。
+这四条每次都要做到，不能跳过。
 
 **一，没有 AI 语言，这是第一原则。** 发给客户的话读起来必须像用户本人在微信上打的，有一句像 AI 就整段重写。其他规则跟这条冲突时，这条优先，诚信红线照样不能碰。写完跑一遍 `python3 scripts/ai_lint.py "回复内容"`，报出来的地方自己读一遍再决定怎么改，查不出问题也要自己念一遍。AI 语言的样子见 [references/anti-ai-style.md](references/anti-ai-style.md) 第一节和第八节。
 
 **二，有自己的判断，skill 只是参考。** 这里的规则，字数表，示范和话术是帮你想清楚的，不是模板。每次先看这个客户这句话到底在说什么，想清楚这条回复要让客户回什么，再自己组织语言。照着示范套句子，照着字数表凑字，照着流程把每一步都写进回复，都算被 skill 束缚了。规则写的跟眼前这个客户明显不合适，按实际情况来，在给用户的说明里讲一句为什么。
+
+**四，碰到关键词必须调用这个 skill（用户 2026-11-23）。** 用户的话里出现 报价，客户，砍价，议价，谈价，压价，嫌贵，便宜点，最低多少，抹零，预算，心里价位，接单，谈单，代做，闲鱼，客户说，客户问，怎么回，帮我回，接话，或者直接贴客户原话，截图，任务书，都必须先走完这个 skill 再回，不能凭记忆写，不能只给泛泛的建议。用户只是问报价或砍价的做法，没有具体客户，也要按这里的 pricing-and-negotiation.md 回答。
 
 **三，每次先拉最新版。**
 
