@@ -16,6 +16,19 @@
 - Ames, D. R., & Mason, M. F. (2015). Tandem anchoring: informational and politeness effects of range offers. *Journal of Personality and Social Psychology*, 109(2), 254–274。支撑 NP 二.4。中
 - Bhatia, N., & Gunia, B. C. (2018). Phantom anchors. *Organizational Behavior and Human Decision Processes*。支撑 NP 五.10，红线 报幌子价。中
 
+## 吉利数定价
+- Simmons, L. C., & Schindler, R. M. (2003). Cultural superstitions and the price endings used in Chinese advertising. *Journal of International Marketing*, 11(2), 101–111。中文价格广告偏爱尾数8，躲开4。支撑 PN 九。
+- Block, L., & Kramer, T. (2009). The effect of superstitious beliefs on performance expectations. *Journal of the Academy of Marketing Science*, 37, 161–169。台湾消费者愿为8个装多付钱。支撑 PN 九。888 对 777 收音机的结果出自 Kramer 和 Block 的另一项研究，见 EurekAlert 2008 年新闻稿，原文未读。
+- Kramer, T., & Block, L. (2008). Conscious and nonconscious components of superstitious beliefs in judgment and decision making. *Journal of Consumer Research*, 34(6), 783–793。吉利属性的产品出问题后满意度掉得更多。支撑 PN 九.6。
+- Westjohn, S. A., Roschk, H., & Magnusson, P. (2017). Eastern versus Western culture pricing strategy: superstition, lucky numbers, and localization. *Journal of International Marketing*, 25(1)。新加坡，高价商品同样用吉利尾数，提升价格吸引力。支撑 PN 九。
+- Luo, P., Xu, Y., & Law, R. (2023). Chase for lucky numbers and take positive actions. *Tourism Economics*, 29(4)。蚂蚁短租，价格带8的房间订单更多评分更高。支撑 PN 九。
+- Chen, L., Mu, H., Ma, K., & Jiang, L. (2024). The effect of lucky price end numbers on consumers' intention to purchase a product. *Social Behavior and Personality*。450 名本科生四个实验，负面情绪，失控感，经历大事（四级考试）时吉利尾数提升购买意愿更明显。支撑 PN 九。只读了摘要。
+- Yang, Z. (2011). "Lucky" numbers, unlucky consumers. *Journal of Socio-Economics*, 40(5), 692–699。北京一万多个价签，商家迎合数字偏好，消费者多付钱。背景。
+
+## 让步节奏
+- Kwon, S., & Weingart, L. R. (2004). Unilateral concessions from the other party. *Journal of Applied Psychology*, 89(2), 263–278。对方马上让步时，人对东西的估值和成交满意度最低，逐步或延后让步更好。支撑 PN 十.4。
+- Tey, K. S., Schaerer, M., Madan, N., & Swaab, R. I. (2021). The impact of concession patterns on negotiations. *Organizational Behavior and Human Decision Processes*。七个研究 N=2311，让步一次比一次小，对方还价更保守，成交更差。支撑 PN 十.8。
+
 ## 骗局心理与影响力
 - Stajano, F., & Wilson, P. (2011). Understanding scam victims: seven principles for systems security. *Communications of the ACM*, 54(3), 70–75。素材为 BBC The Real Hustle。支撑 NP 一。中
 - Lea, S. E. G., Fischer, P., & Evans, K. M. (2009). *The psychology of scams: Provoking and committing errors of judgement*. 英国公平交易局委托报告。支撑 NP 一。中
