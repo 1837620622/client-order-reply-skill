@@ -1,36 +1,36 @@
 # 社科问卷、商业分析与通用科研配套知识库
 
-除了硬核金融和理工科仿真，大量接单落在社科/心理/教育问卷统计、经管商业分析、行研报告、科研绘图与跨学科综合任务上。这类单子客户大多偏非技术背景，**最忌讳炫技堆术语，重点是用大白话点透真卡点和规范门槛**。
+除了硬核金融和理工科仿真，大量接单落在社科/心理/教育问卷统计、经管商业分析、行研报告、科研绘图与跨学科综合任务上。这类单子客户大多偏非技术背景，最忌讳炫技堆术语，重点是用大白话点透真卡点和规范门槛。
 
 ## 一、社科、心理、管理与教育问卷统计（SPSS / AMOS / Mplus / SmartPLS / R）
 
 ### 核心方法与专业切入点
-- **量表质量检验**：信度分析（Cronbach's α、组合信度 CR）、效度分析（KMO 与 Bartlett 球形检验、探索性因子分析 EFA 载荷与共同度、验证性因子分析 CFA 拟合指标 χ²/df、RMSEA、CFI、TLI、SRMR、聚合效度 AVE > 0.5、区分效度 Fornell-Larcker 与 HTMT）。
-- **共同方法偏差检验（CMB）**：Harman 单因素检验（现在很多严一点的期刊会嫌不够，常要求加做控制未测单一方法潜变量 ULMC 或标记变量法）。
-- **结构方程模型（SEM）与中介调节**：
+- 量表质量检验：信度分析（Cronbach's α、组合信度 CR）、效度分析（KMO 与 Bartlett 球形检验、探索性因子分析 EFA 载荷与共同度、验证性因子分析 CFA 拟合指标 χ²/df、RMSEA、CFI、TLI、SRMR、聚合效度 AVE > 0.5、区分效度 Fornell-Larcker 与 HTMT）。
+- 共同方法偏差检验（CMB）：Harman 单因素检验（现在很多严一点的期刊会嫌不够，常要求加做控制未测单一方法潜变量 ULMC 或标记变量法）。
+- 结构方程模型（SEM）与中介调节：
   - CB-SEM（AMOS / Mplus / lavaan）：路径系数、Bootstrap 抽样（通常 5000 次）置信区间检验多重中介/链式中介。
   - PLS-SEM（SmartPLS）：适合小样本、非正态或探索性复杂模型（含高阶构念与调节效应）。
   - PROCESS 插件（Hayes 模型 4/7/8/14/58/59 等）：有调节的中介、简单斜率图（Simple Slope）与 Johnson-Neyman 探测区间图。
-- **其他高频方法**：多层线性模型（HLM / 跨层回归，如员工嵌套在团队中，需先算 ICC(1) 和 rwg）、潜在剖面分析（LPA / LCA，Mplus 跑 AIC/BIC/aBIC/Entropy/LMRT/BLRT 选类别数）、模糊集定性比较分析（fsQCA，变量校准锚点、必要条件分析、真值表组态与稳健性检验）、实验法方差分析（ANOVA / MANOVA / 重复测量方差分析）。
+- 其他高频方法：多层线性模型（HLM / 跨层回归，如员工嵌套在团队中，需先算 ICC(1) 和 rwg）、潜在剖面分析（LPA / LCA，Mplus 跑 AIC/BIC/aBIC/Entropy/LMRT/BLRT 选类别数）、模糊集定性比较分析（fsQCA，变量校准锚点、必要条件分析、真值表组态与稳健性检验）、实验法方差分析（ANOVA / MANOVA / 重复测量方差分析）。
 
 ### 真内行隐性坑与必问点
 - 客户发来的问卷原始数据常见大坑：反向计分题没转正、答卷时间过短或全选同一项的废卷没剔、量表维度划分和题目编号对不上、直接硬跑 CFA 拟合度过不去（需要看 MI 修正指数合理删题或建残差相关，不能瞎删）。
-- **必问点**：问卷现在收回多少份了、是不是成熟量表、理论假设图和要做的分析模块定了没、学校有没有规定用 AMOS 还是 SmartPLS 或 Mplus。
+- 必问点：问卷现在收回多少份了、是不是成熟量表、理论假设图和要做的分析模块定了没、学校有没有规定用 AMOS 还是 SmartPLS 或 Mplus。
 
 ## 二、商业分析、行业研究与咨询类交付
 
 ### 核心场景与专业点
-- **市场与商业分析**：市场规模测算（自上而下 Top-down 与自下而上 Bottom-up 交叉验证，讲清口径与假设来源）、产业链上下游拆解、竞品矩阵与商业模式对比、波特五力/SWOT/PESTEL 结合真实财务与市占数据落地（不是空写几段套话）。
-- **互联网与运营数据分析**：用户留存队列分析（Cohort）、转化漏斗与流失定位、RFM 客户分群与生命周期价值（LTV / CAC）、A/B 实验假设检验（样本量计算、辛普森悖论排查、p 值与统计功效 Power）、BI 看板搭建（Tableau / Power BI / FineBI / Superset）。
-- **商业计划书与项目测算**：盈利模型、成本结构、盈亏平衡点测算、3 到 5 年营收与现金流预测表（逻辑能闭环、假设经得起投资人或评委追问）。
+- 市场与商业分析：市场规模测算（自上而下 Top-down 与自下而上 Bottom-up 交叉验证，讲清口径与假设来源）、产业链上下游拆解、竞品矩阵与商业模式对比、波特五力/SWOT/PESTEL 结合真实财务与市占数据落地（不是空写几段套话）。
+- 互联网与运营数据分析：用户留存队列分析（Cohort）、转化漏斗与流失定位、RFM 客户分群与生命周期价值（LTV / CAC）、A/B 实验假设检验（样本量计算、辛普森悖论排查、p 值与统计功效 Power）、BI 看板搭建（Tableau / Power BI / FineBI / Superset）。
+- 商业计划书与项目测算：盈利模型、成本结构、盈亏平衡点测算、3 到 5 年营收与现金流预测表（逻辑能闭环、假设经得起投资人或评委追问）。
 
 ### 必问点
 - 目标受众是谁（课程作业、商赛评委、还是企业内部汇报/融资）、有没有现成内部数据还是全靠公开研报和统计数据拼口径、要交 Excel 底稿 + 图表还是连带分析文档/PPT。
 
 ## 三、通用科研配套与学术规范注意事项
 
-- **科研绘图与可视化**：Nature/Science/顶刊规范配色与排版（Python Matplotlib/Seaborn、R ggplot2、Origin、OriginPro、GraphPad Prism、MATLAB），核心看清期刊对 DPI（通常 300-600 dpi）、字体（Times New Roman / Arial）、矢量格式（EPS / PDF / SVG / TIFF）和拼图尺寸的要求。
-- **文献计量与知识图谱**：CiteSpace / VOSviewer / Bibliometrix（WoS 核心合集 / CNKI / Scopus 导出格式容易乱码或字段缺失，去重清洗、同义词合并和参数调优才是耗时点，不是直接导进去截张默认丑图就行）。
-- **跨学科或陌生细分领域处理原则**：
-  - 凡是不在以上常规手册里的新兴细分领域（如遥感 GIS / ArcGIS / QGIS / Google Earth Engine、气象 WRF、声学/光学 Zemax / Lumerical、分子对接 AutoDock / 分子动力学 GROMACS、建筑能耗 EnergyPlus / Fluent 风环境、财税审计筹划、法律判例检索统计等），**一律先按 `research-protocol.md` 联网搜清楚该领域的标准软件、输入数据格式、验收指标和常见报错，再按真懂行的口径开口回复**。
+- 科研绘图与可视化：Nature/Science/顶刊规范配色与排版（Python Matplotlib/Seaborn、R ggplot2、Origin、OriginPro、GraphPad Prism、MATLAB），核心看清期刊对 DPI（通常 300-600 dpi）、字体（Times New Roman / Arial）、矢量格式（EPS / PDF / SVG / TIFF）和拼图尺寸的要求。
+- 文献计量与知识图谱：CiteSpace / VOSviewer / Bibliometrix（WoS 核心合集 / CNKI / Scopus 导出格式容易乱码或字段缺失，去重清洗、同义词合并和参数调优才是耗时点，不是直接导进去截张默认丑图就行）。
+- 跨学科或陌生细分领域处理原则：
+  - 凡是不在以上常规手册里的新兴细分领域（如遥感 GIS / ArcGIS / QGIS / Google Earth Engine、气象 WRF、声学/光学 Zemax / Lumerical、分子对接 AutoDock / 分子动力学 GROMACS、建筑能耗 EnergyPlus / Fluent 风环境、财税审计筹划、法律判例检索统计等），一律先按 `research-protocol.md` 联网搜清楚该领域的标准软件、输入数据格式、验收指标和常见报错，再按真懂行的口径开口回复。
   - 绝不装全能万金油说空话；查实了就说得准，没拿到原文件就先要原文件再判断。
