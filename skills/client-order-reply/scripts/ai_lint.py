@@ -55,6 +55,21 @@ for p in prev:
     if p.strip() and opener(p) == opener(text):
         flag("必改", f"开头 {opener(text)} 和上一条一样，换个开头或者直接从客户的话接")
 
+# 祝福和内容和前几条重复
+bless = ["一路发", "沾点喜气", "沾沾光", "沾点光", "顺顺利利", "图个吉利"]
+for p in prev:
+    same = [b for b in bless if b in p and b in text]
+    if same:
+        flag("必改", "祝福 " + " ".join(same) + " 前几条用过，换个说法或者这条不带祝福")
+    pc = re.sub(r"[，。？?\s]", "", p); tc = re.sub(r"[，。？?\s]", "", text)
+    rep = set()
+    for i in range(len(tc) - 9):
+        seg = tc[i:i + 10]
+        if seg in pc:
+            rep.add(seg)
+    if rep:
+        flag("留意", "和前几条有整段重复 " + " ".join(sorted(rep)[:3]) + "，说过的不再说")
+
 # 口头禅过密
 for w, n in [("这块", 2), ("直接", 2), ("我这边", 1), ("你那边", 1), ("咱们", 1), ("一下", 2), ("我会", 1), ("我可以", 1)]:
     c = text.count(w)
