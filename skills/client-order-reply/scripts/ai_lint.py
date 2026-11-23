@@ -138,6 +138,17 @@ if re.search(r"(小了|少了|多了).{0,4}(也|就).{0,6}(下来|上去|少|多
 if text.count("？") > 1:
     flag("留意", "问号超过一个，一次只问一件")
 
+# 豆包味（用户 2026-11-23，分支定界单）：罗列交付清单，替老师打包票，主动解释自己为什么多做
+doubao = [w for w in ["老师一看", "一看就能", "一看就懂", "都写清楚", "写得清清楚楚", "明明白白", "顺手把", "能直接抄", "包你"] if w in text]
+if re.search(r"不然.{0,15}(会乱|看不懂|对不上|没出处)", text):
+    doubao.append("不然…会乱")
+if doubao:
+    flag("必改", "豆包味 " + " ".join(doubao) + "，删掉卖点和解释，只留判断和下一步")
+for seg in re.split(r"[。？]", text):
+    if seg.count("，") >= 5 and len(seg) > 45:
+        flag("留意", "一句里逗号串太长，像在罗列交付清单：" + seg[:20] + "…，只留最要紧的一两样")
+        break
+
 # 问句位置随机（用户 2026-11-23）
 def ends_with_q(t):
     last = [s for s in re.split(r"(?<=[。？])", t.strip()) if s.strip()]
