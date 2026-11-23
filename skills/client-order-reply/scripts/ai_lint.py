@@ -1,12 +1,18 @@
 #!/usr/bin/env python3
 """给客户的回复做 AI 味体检。
-用法  python3 ai_lint.py "回复内容" [--prev "上一条"] [--prev "上上条"]
+用法  python3 ai_lint.py "回复内容" [--client "客户这条"] [--prev "上一条"] [--prev "上上条"]
       echo 回复 | python3 ai_lint.py
 只是提示，不是判决。报出来的地方自己读一遍再决定怎么改。"""
 import re
 import sys
 
 args = sys.argv[1:]
+client = ""
+if "--client" in args:
+    k = args.index("--client")
+    if k + 1 < len(args):
+        client = args[k + 1]
+    del args[k:k + 2]
 prev = []
 while "--prev" in args:
     k = args.index("--prev")
@@ -164,6 +170,12 @@ n = len(re.sub(r"\s", "", text))
 pl = [len(re.sub(r"\s", "", p)) for p in prev]
 if pl and all(abs(x - n) <= max(8, n * 0.2) for x in pl):
     flag("留意", "长短和前几条差不多，按客户这条问了什么定，长短自然交叉")
+
+# 和客户这条比长短，像面对面说话（用户 2026-11-23）
+if client.strip():
+    cn = len(re.sub(r"\s", "", client))
+    if n > max(30, cn * 4):
+        flag("留意", f"客户这条 {cn} 字，回复 {n} 字，当面说会这么长吗，不是在讲价值或流程就删到只剩他要的那件")
 
 if not hits:
     print("没查出明显 AI 味。机器查不出语气，最后自己念一遍，像不像本人在手机上打的。")
