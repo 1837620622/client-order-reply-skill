@@ -179,7 +179,7 @@ def ends_with_q(t):
 if prev and ends_with_q(text) and all(ends_with_q(p) for p in prev):
     flag("留意", "这条和前几条都以问句结尾，问句换到开头或中间，或者这条用一个动作收")
 
-# 长短和前几条太接近（不设字数标准，只比相对长短）
+# 长短和前几条太接近（长短不固定，只比相对长短）
 n = len(re.sub(r"\s", "", text))
 pl = [len(re.sub(r"\s", "", p)) for p in prev]
 if pl and all(abs(x - n) <= max(8, n * 0.2) for x in pl):
@@ -190,6 +190,10 @@ if client.strip():
     cn = len(re.sub(r"\s", "", client))
     if n > max(30, cn * 4):
         flag("留意", f"客户这条 {cn} 字，回复 {n} 字，当面说会这么长吗，不是在讲价值或流程就删到只剩他要的那件")
+
+# 太长（用户 2026-11-24）：极难问题一般50到100字左右
+if n > 110:
+    flag("留意", f"回复 {n} 字，极难问题一般50到100字就够，简单问题更短，不是用户点名要细说就删，或者拆两条")
 
 if not hits:
     print("没查出明显 AI 味。机器查不出语气，最后自己念一遍，像不像本人在手机上打的。")
