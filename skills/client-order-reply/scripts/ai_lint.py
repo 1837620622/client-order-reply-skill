@@ -139,6 +139,12 @@ if wan:
 if re.search(r"你[^。？]{0,14}就行[。]?", text) or re.search(r"(^|[，。])你(先|直接)", text):
     flag("留意", "你…就行 你先 你直接 是给客户派活，像在安排人，改成我能做什么或者删掉")
 
+# 开头口气词连用（用户 2026-11-24）
+def kq(x):
+    m=re.match(r"(哦哦|嗯嗯|噢这样|噢|哦|嗯|啊这个|啊|对|行)", x.strip()); return m.group(1) if m else ""
+if prev and kq(text) and kq(text)==kq(prev[-1]):
+    flag("留意", f"开头和上一条都用 {kq(text)}，换一个接话或者直接说事")
+
 # 送客式结尾
 if re.search(r"(你先考虑|想好了|定了随时|随时联系)", text[-30:]):
     flag("留意", "结尾像送客，客户没说不做的话换成一句话能回的下一步")
